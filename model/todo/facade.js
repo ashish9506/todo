@@ -1,5 +1,5 @@
-const Facade = require("../../lib/facade");
-const todoSchema = require("./schema");
+const Facade = require('../../lib/facade');
+const todoSchema = require('./schema');
 
 class TodoFacade extends Facade {}
 
