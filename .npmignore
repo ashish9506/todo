@@ -1,0 +1,7 @@
+coverage
+node_modules
+example
+.eslintignore
+.eslintrc.json
+.gitignore
+package-lock.json
