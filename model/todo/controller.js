@@ -1,5 +1,4 @@
 const todoFacade = require('./facade');
-
 class TodoController {
   async findAll(req, res) {
     const todoList = await todoFacade.findAll();

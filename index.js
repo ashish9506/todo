@@ -41,6 +41,10 @@ if (!config.get('isTesting')) {
   app.use(require('express-bunyan-logger')(bunyanConfig));
 }
 
+// process.on('uncaughtException', function (err) {
+//   console.log('Caught exception: ' + err);
+// });
+
 const routes = require('./routes');
 app.use('/', routes);
 

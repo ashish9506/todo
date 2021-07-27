@@ -7,7 +7,11 @@ before(async () => {
   const app = require('../index');
   global.request = supertest(app);
   global.expect = require('chai').expect;
-  await serverUtils.boot(app);
+  try {
+    await serverUtils.boot(app);
+  } catch (e) {
+    console.log(e);
+  }
   await delay(1000);
 });
 // eslint-disable-next-line no-undef

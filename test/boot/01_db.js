@@ -48,7 +48,7 @@ module.exports = () =>
     log.info('Boot script - Resolving db migrations finished');
 
     setTimeout(() => {
-        console.log('res')
+      console.log('res');
       resolve();
     }, 2000);
 
